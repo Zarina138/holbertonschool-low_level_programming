@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
- * Description - Prints a spesific message using printf function
+ * Description: Prints a specific message using printf function
  *
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
