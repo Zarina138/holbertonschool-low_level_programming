@@ -1,19 +1,25 @@
 #include <stdio.h>
 
-int main () {
-   char C;
-   
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char c;
 
-   for(C = '0' ;C <='9' ;C++)
-   {
-      putchar(C);
-   }
-   for (C = 'a';C <='f';C++ )
-   {
-   		putchar(C);
-   	
-   }
-   putchar('\n');
-   
-   return 0;
+	for (c = '0'; c <= '9'; c++)
+	{
+		putchar(c);
+	}
+
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
