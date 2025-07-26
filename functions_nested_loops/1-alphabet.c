@@ -1,13 +1,18 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints the alphabet in lowercase followed by a new line
+ * print_alphabet - alhpabeta
+ *
+ * Return: endelss void
  */
 void print_alphabet(void)
 {
-	char a;
+	char c = 'a';
 
-	for (a = 'a'; a <= 'z'; a++)
-		_putchar(a);
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
 	_putchar('\n');
 }
