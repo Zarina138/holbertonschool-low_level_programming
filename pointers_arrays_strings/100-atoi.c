@@ -9,33 +9,25 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int isare = 1;
-	int netice = 0;
-	int regem_tapildi = 0;
+	int sign = 1;
+	int result = 0;
+	int found_digit = 0;
 
 	while (s[i])
 	{
 		if (s[i] == '-')
-			isare *= -1;
+			sign *= -1;
+		else if (s[i] == '+')
+		    sign *= 1;
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
-			int reqem = s[i] - '0';
-
-			if (netice > (2147483647 - reqem) / 10)
-			{
-				if (isare == 1)
-					return 2147483647;
-				else
-					return -2147483648;
-			}
-
-			regem_tapildi = 1;
-			netice = netice * 10 + reqem;
+			found_digit = 1;
+			result = result * 10 + (s[i] - '0');
 		}
-		else if (regem_tapildi)
+		else if (found_digit)
 			break;
 		i++;
 	}
 
-	return isare * netice;
+	return (sign * result);
 }
