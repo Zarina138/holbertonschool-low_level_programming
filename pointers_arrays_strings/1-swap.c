@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * Description: Prints a function that swaps the values
- * of two integers
- * @a: aaaa
- * @b: bbbb
- * @z: zzzz
+ * swap_int- Swaps the values of two integers bezdirdin meni daha betty off
+ * @a: Pointer to the first integer
+ * @b: Pointer to the second integer
  */
 
 void swap_int(int *a, int *b)
