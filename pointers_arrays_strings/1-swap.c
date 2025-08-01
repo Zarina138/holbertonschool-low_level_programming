@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- *  Description: Prints a function that swaps the values 
- *  of two integers
- * 
+ * Description: Prints a function that swaps the values
+ * of two integers
  * @a: aaaa
  * @b: bbbb
  * @z: zzzz
