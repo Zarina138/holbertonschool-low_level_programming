@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * @dest: Destinationn
- * @src: Sourcee
+ * _strcat - stringleri birlesdirir betyycim
+ * @dest: Destinationn dd
+ * @src: Sourcee ss
  * Return: Returnn Dest..
  */
 
