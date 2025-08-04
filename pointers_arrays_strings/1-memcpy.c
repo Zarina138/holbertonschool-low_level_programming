@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * memcpy - yaddas sahesini copy ediyir
+ * _memcpy - yaddas sahesini copy ediyir
  * @dest: destination
  * @src: source
  * @n: baytlarimizin sayi hehe
