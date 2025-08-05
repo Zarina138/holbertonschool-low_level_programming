@@ -2,9 +2,10 @@
 #include <stddef.h>
 
 /**
- * _strpbrk - searches a string for any of a set of bytes
+ * _strpbrk - searches a string for any of a set of bytes bettyy  please read it
  * @s: string to search in
  * @accept: aaaa
+ * Return: return right answerrr bettyyyy
  */
 char *_strpbrk(char *s, char *accept)
 {
