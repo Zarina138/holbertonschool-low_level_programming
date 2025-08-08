@@ -17,5 +17,5 @@ void print_diagsums(int *a, int size)
         cem_esas += a[i * size + i];
         cem_ikinci += a[i * size + (size - 1 - i)];
     }
-    printf("%d,%d\n", cem_esas, cem_ikinci);
+    printf("%d\n", cem_esas + cem_ikinci);
 }
