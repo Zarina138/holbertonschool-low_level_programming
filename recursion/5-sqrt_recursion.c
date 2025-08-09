@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- *  _sqrt_recursion - the natural square root of a number
- *  _sqrt_helper: Komekci funksiya
- *  @i: i ,kokalti eded deye bilerik bir nov
- *  @n: n
- *  Return: Return right answer
+ * _sqrt_helper - komekci funksiya
+ * @n: eded
+ * @i: texmini kok
+ *
+ * Return: return
  */
 int _sqrt_helper(int n, int i)
 {
@@ -15,6 +14,12 @@ int _sqrt_helper(int n, int i)
 		return (-1);
 	return (_sqrt_helper(n, i + 1));
 }
+/**
+ * _sqrt_recursion - esas funksiya
+ * @n: n
+ *
+ * Return: return
+ */
 
 int _sqrt_recursion(int n)
 {
