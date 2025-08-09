@@ -9,15 +9,17 @@
  */
 int main(int argc, char *argv[]) 
 {
+	int eded1, eded2, cvb;
+	
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	int eded1 = atoi(argv[1]);
-        int eded2 = atoi(argv[2]);
-	int cvb = eded1 * eded2;
+	eded1 = atoi(argv[1]);
+	eded2 = atoi(argv[2]);
 	
+	cvb = eded1 * eded2;
 	printf("%d\n", cvb);
 	
 	return (0);
