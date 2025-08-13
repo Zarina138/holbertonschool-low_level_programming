@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-unsigned int my_strlen(const char *s);
+unsigned int my_lentgh(const char *s);
 char *_strdup(char *str);
 unsigned int my_length(char *s)
 {
