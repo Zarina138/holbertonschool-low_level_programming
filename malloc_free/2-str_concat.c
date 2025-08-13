@@ -30,7 +30,8 @@ char *str_concat(char *s1, char *s2)
 {
 	char *new_str;
 	unsigned int len1, len2, i, j;
-
+	if (new_str == NULL)
+		return (NULL);
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
@@ -40,9 +41,7 @@ char *str_concat(char *s1, char *s2)
 	len2 = my_len(s2);
 
 	new_str = malloc(len1 + len2 + 1);
-	if (new_str == NULL)
-		return (NULL);
-
+	
 	for (i = 0; i < len1; i++)
 		new_str[i] = s1[i];
 	for (j = 0; j < len2; j++)
