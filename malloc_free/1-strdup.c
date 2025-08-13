@@ -1,8 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 
-unsigned int my_lentgh(const char *s);
-char *_strdup(char *str);
+/**
+ * my_length - Returns the length of a string
+ * @s: The string to measure
+ *
+ * Return: The length of the string
+ */
 unsigned int my_length(char *s)
 {
 	unsigned int len = 0;
@@ -12,6 +16,13 @@ unsigned int my_length(char *s)
 
 	return len;
 }
+
+/**
+ * _strdup - Creates a duplicate of a string
+ * @str: The string to duplicate
+ *
+ * Return: Pointer to the new string, or NULL if it fails
+ */
 
 char *_strdup(char *str)
 {
