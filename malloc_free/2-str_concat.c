@@ -9,10 +9,10 @@
  */
 unsigned int my_len(char *s)
 {
-	if (s == NULL)
-		return (0);
 	unsigned int len = 0;
 
+	if (s == NULL)
+		return (0);
 	while (s[len] != '\0')
 		len++;
 	return (len);
