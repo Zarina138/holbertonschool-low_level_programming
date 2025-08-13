@@ -1,6 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
 
+unsigned int my_strlen(const char *s);
+char *_strdup(char *str);
+unsigned int my_length(char *s)
+{
+	unsigned int len = 0;
+
+	while (s[len] != '\0')
+		len++;
+
+	return len;
+}
+
 char *_strdup(char *str)
 {
         char *cpy;
@@ -13,13 +25,4 @@ char *_strdup(char *str)
         for (i = 0; i < len; i++)
                 cpy[i] = str[i];
         return (cpy);
-}
-unsigned int my_length(char *s)
-{
-	unsigned int len = 0;
-
-	while (s[len] != '\0')
-		len++;
-
-	return len;
 }
