@@ -9,6 +9,8 @@
  */
 unsigned int my_len(char *s)
 {
+	if (s == NULL)
+		return (0);
 	unsigned int len = 0;
 
 	while (s[len] != '\0')
