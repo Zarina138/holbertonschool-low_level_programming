@@ -17,7 +17,7 @@ char *_strdup(char *str)
 {
         char *cpy;
         unsigned int i;
-        unsigned int len = my_strlen(str) + 1;
+        unsigned int len = my_length(str) + 1;
 
         cpy = malloc(len);
         if (!cpy)
