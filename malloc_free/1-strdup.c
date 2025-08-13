@@ -14,7 +14,7 @@ unsigned int my_length(char *s)
 	while (s[len] != '\0')
 		len++;
 
-	return len;
+	return (len);
 }
 
 /**
@@ -23,22 +23,23 @@ unsigned int my_length(char *s)
  *
  * Return: Pointer to the new string, or NULL if it fails
  */
-
 char *_strdup(char *str)
 {
-        char *cpy;
-        unsigned int i;
-        unsigned int len;
+	char *cpy;
+	unsigned int i;
+	unsigned int len;
 
 	if (str == NULL)
 		return (NULL);
 
 	len = my_length(str) + 1;
-	
-	cpy = malloc(len);
-        if (!cpy)
-                return (NULL);
-        for (i = 0; i < len; i++)
-                cpy[i] = str[i];
-        return (cpy);
+
+	cpy = malloc(len * sizeof(char));
+	if (cpy == NULL)
+		return (NULL);
+
+	for (i = 0; i < len; i++)
+		cpy[i] = str[i];
+
+	return (cpy);
 }
