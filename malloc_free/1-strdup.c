@@ -3,7 +3,6 @@
 
 unsigned int my_length(char *s)
 {
-	unsigned int len;
 	unsigned int len = 0;
 
 	while (s[len] != '\0')
