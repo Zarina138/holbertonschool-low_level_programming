@@ -19,6 +19,9 @@ char *_strdup(char *str)
         unsigned int i;
         unsigned int len = my_length(str) + 1;
 
+	if (str == NULL)
+		return (NULL);
+
         cpy = malloc(len);
         if (!cpy)
                 return (NULL);
