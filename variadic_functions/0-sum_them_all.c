@@ -12,7 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(task0,n);
 
 	for (i=0; i<=n;i++)
-		sum+=va_args(task0,int);
+		sum+=va_arg(task0,int);
 	va_end(task0);
 	return(sum);
 }
