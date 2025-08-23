@@ -8,7 +8,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
     for (i = 0; i < n; i++)
     {
-	    if (seperator != NULL && i > 0)
+	    if (*seperator != NULL && i > 0)
 	    {
 		    printf("%s", seperator);
 		    printf("%d",va_arg(task1,int));
