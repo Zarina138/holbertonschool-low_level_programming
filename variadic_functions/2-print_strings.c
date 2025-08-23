@@ -6,14 +6,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list task2;
-	va_start(task2,n);
+
+	va_start(task2, n);
 
 	for (i = 0; i < n; i++)
 	{
 		char *s = va_arg(task2, char*);
 
 		if (s != NULL)
-			printf("%s",s);
+			printf("%s", s);
 		else
 			printf("(nil)");
 
