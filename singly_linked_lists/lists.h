@@ -13,11 +13,11 @@
  * Description: singly linked list node structure
  */
 int _putchar(char c);
-typedef struct elements
+typedef struct node_s
 {
 	char *str;
 	int len;
-	struct elements *next;
+	struct node_s *next;
 } list_t;
 size_t print_list(const list_t *h);
 #endif
