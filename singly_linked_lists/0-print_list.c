@@ -6,12 +6,6 @@
  * return: return counts of elements
  *
  */
-typedef struct elements
-{
-	char *str;
-	int len;
-	struct element* next;
-}list_t;
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
