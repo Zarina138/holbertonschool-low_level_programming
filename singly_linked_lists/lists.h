@@ -5,7 +5,7 @@
 #include <stddef.h>
 
 /**
- * struct elements - singly linked list node
+ * struct node_s - singly linked list node
  * @str: string (malloc'ed string)
  * @len: length of the string
  * @next: pointer to the next node
