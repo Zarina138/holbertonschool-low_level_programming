@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 		print_error_and_exit(97, "Usage: cp file_from file_to\n", NULL);
 
 	input_fd = open(argv[1], O_RDONLY);
-	if (input_fd == -0)
+	if (input_fd == -1)
 		print_error_and_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
 	output_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
