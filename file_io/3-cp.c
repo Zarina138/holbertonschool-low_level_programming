@@ -33,7 +33,6 @@ int main(int argc, char **argv)
 	int input_fd, output_fd, read_count, write_count;
 	char buffer[BUFFER_SIZE];
 
-
 	if (argc != 3)
 		print_error_and_exit(97, "Usage: cp file_from file_to\n", NULL);
 
@@ -49,9 +48,8 @@ int main(int argc, char **argv)
 	{
 		write_count = write(output_fd, buffer, read_count);
 		if (write_count != read_count)
-			print_error_and_exit(98, "Error: Can't write to %s\n", argv[2]);
+			print_error_and_exit(98, "Error: Can't read from file %s\n", argv[1]);
 	}
-
 
 	if (read_count == -1)
 		print_error_and_exit(98, "Error: Can't read from file %s\n", argv[1]);
