@@ -44,15 +44,18 @@ int main(int argc, char **argv)
 	if (output_fd == -1)
 		print_error_and_exit(99, "Error: Can't write to %s\n", argv[2]);
 
-	while ((read_count = read(input_fd, buffer, BUFFER_SIZE)) > 0)
+	while (1)
 	{
+		read_count = read(input_fd, buffer, BUFFER_SIZE);
+		if (read_count == -1)
+			print_error_and_exit(98, "Error: Can't read from file %s\n", argv[1]);
+		if (read_count == 0) /* EOF */
+			break;
+
 		write_count = write(output_fd, buffer, read_count);
-		if (write_count != read_count)
+		if (write_count == -1 || write_count != read_count)
 			print_error_and_exit(98, "Error: Can't read from file %s\n", argv[1]);
 	}
-
-	if (read_count == -1)
-		print_error_and_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
 	if (close(input_fd) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", input_fd), exit(100);
