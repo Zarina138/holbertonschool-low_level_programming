@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 	{
 		write_count = write(output_fd, buffer, read_count);
 		if (write_count != read_count)
-			print_error_and_exit(99, "Error: Can't write to %s\n", argv[2]);
+			print_error_and_exit(98, "Error: Can't write to %s\n", argv[2]);
 	}
 
 
