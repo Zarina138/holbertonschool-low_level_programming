@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 	char buffer[BUFFER_SIZE];
 
 
-	if (argc != 2)
+	if (argc != 5)
 		print_error_and_exit(97, "Usage: cp file_from file_to\n", NULL);
 
 	input_fd = open(argv[1], O_RDONLY);
