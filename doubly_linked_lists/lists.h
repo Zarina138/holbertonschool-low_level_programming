@@ -4,7 +4,7 @@
 #include <stddef.h>
 typedef struct Node
 {
-    int data;
+    int n;
     struct Node* next;
     struct Node* prev;
 
