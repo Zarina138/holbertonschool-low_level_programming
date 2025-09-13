@@ -1,6 +1,7 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stddef.h>
 typedef struct Node
 {
     int data;
