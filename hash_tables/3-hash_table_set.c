@@ -51,4 +51,4 @@ int hash_table_set(hash_table_t *hash_t, const char *key, const char *value)
 	node->next = hash_t->array[index];
 	hash_t->array[index] = node;
 	return (1);
-
+}
